@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Activities - Indira Gandi Abitria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="logo">JS Activities</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#week1">Week 1</a>
+        <a href="#week2">Week 2</a>
+        <a href="#week3">Week 3</a>
+    </nav>
+</header>
+
+<!-- ================= LANDING / HERO ================= -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Welcome to My JavaScript Project</h1>
+        <p>Submitted by: Indira Gandi Abitria</p>
+        <button id="startBtn">Explore Activities</button>
+    </div>
+</section>
+
+<!-- ================= WEEK 1 ================= -->
+<section id="week1" class="content-section">
+    <h2>Week 1</h2>
+
+    <div class="activity">
+        <h3>Activity 1: Your First JavaScript Output</h3>
+        <button id="act1">Run Activity 1</button>
+    </div>
+
+    <div class="activity">
+        <h3>Activity 2: Variables and Data Types</h3>
+        <button id="act2">Run Activity 2</button>
+    </div>
+
+    <div class="activity">
+        <h3>Activity 3: Simple Calculator</h3>
+        <button id="act3">Run Activity 3</button>
+    </div>
+
+    <div class="activity">
+        <h3>Activity 4: User Input using prompt()</h3>
+        <button id="act4">Run Activity 4</button>
+    </div>
+
+    <div class="activity">
+        <h3>Activity 5: Conditional Statements</h3>
+        <button id="act5">Run Activity 5</button>
+    </div>
+
+    <div class="activity">
+        <h3>Activity 6: Loops</h3>
+        <button id="act6">Run Activity 6</button>
+    </div>
+
+    <div class="activity">
+        <h3>Activity 7: JavaScript and HTML Interaction</h3>
+        <button id="act7">Run Activity 7</button>
+    </div>
+</section>
+
+<!-- ================= WEEK 2 ================= -->
+<section id="week2" class="content-section">
+    <h2>Week 2</h2>
+
+    <div class="activity">
+        <h3>Activity 1: Change Background Color</h3>
+        <button id="w2act1">Change Background</button>
+    </div>
+
+    <div class="activity">
+        <h3>Activity 2: Dark Mode Toggle</h3>
+        <button id="w2act2">Toggle Dark Mode</button>
+    </div>
+
+    <div class="activity">
+        <h3>Activity 3: Add New List Items</h3>
+        <button id="w2act3">Add Item</button>
+        <ul id="itemList"></ul>
+    </div>
+
+    <div class="activity">
+        <h3>Activity 4: Remove Paragraph</h3>
+        <p id="removeMe">This paragraph will be removed.</p>
+        <button id="w2act4">Remove Paragraph</button>
+    </div>
+
+    <div class="activity">
+        <h3>Activity 5: Character Counter</h3>
+        <input type="text" id="textInput" placeholder="Type here...">
+        <p>Characters: <span id="charCount">0</span></p>
+    </div>
+
+    <div class="activity">
+        <h3>Activity 6: Simple Addition Calculator</h3>
+        <input type="number" id="num1" placeholder="First number">
+        <input type="number" id="num2" placeholder="Second number">
+        <button id="w2act6">Add</button>
+        <p>Result: <span id="result"></span></p>
+    </div>
+
+   <div class="activity">
+    <h3>Activity 7: Change Image</h3>
+
+    <div class="image-frame">
+        <img id="myImage"
+             src="img1.jpg" width="130">
+    </div>
+
+    <br>
+    <button id="w2act7">Change Image</button>
+</div>
+
+    <div class="activity">
+        <h3>Activity 8: Mini To-Do List</h3>
+        <input type="text" id="todoInput" placeholder="Enter task">
+        <button id="addTodo">Add Task</button>
+        <ul id="todoList"></ul>
+    </div>
+</section>
+
+<!-- ADD THIS BELOW WEEK 2 -->
+<section id="week3" class="content-section">
+    <h2>Week 3</h2>
+
+    <div class="activity">
+        <h3>Activity 16: Dynamic Student Grade Calculator</h3>
+
+        <!-- QUIZZES -->
+        <div class="grade-box">
+            <h4>Quizzes (20%)</h4>
+            <input type="number" id="quiz1" placeholder="Quiz 1 Score">
+            <input type="number" id="quiz1Total" placeholder="Total Items">
+            <input type="number" id="quiz2" placeholder="Quiz 2 Score">
+            <input type="number" id="quiz2Total" placeholder="Total Items">
+            <button id="computeQuiz">Compute</button>
+            <p>Average: <span id="quizAvg">0</span></p>
+        </div>
+
+        <!-- EXAMS -->
+        <div class="grade-box">
+            <h4>Exams (30%)</h4>
+            <input type="number" id="exam1" placeholder="Exam 1 Score">
+            <input type="number" id="exam1Total" placeholder="Total Items">
+            <input type="number" id="exam2" placeholder="Exam 2 Score">
+            <input type="number" id="exam2Total" placeholder="Total Items">
+            <button id="computeExam">Compute</button>
+            <p>Average: <span id="examAvg">0</span></p>
+        </div>
+
+        <!-- MCO -->
+        <div class="grade-box">
+            <h4>MCOs (50%)</h4>
+            <input type="number" id="mco1" placeholder="MCO 1 Score">
+            <input type="number" id="mco1Total" placeholder="Total Items">
+            <input type="number" id="mco2" placeholder="MCO 2 Score">
+            <input type="number" id="mco2Total" placeholder="Total Items">
+            <button id="computeMCO">Compute</button>
+            <p>Average: <span id="mcoAvg">0</span></p>
+        </div>
+
+        <div class="grade-final">
+            <button id="finalGradeBtn">Calculate Final Grade</button>
+            <button id="resetGradeBtn">Reset</button> <!-- ✅ ADDED -->
+            <p>Final Grade: <span id="finalGrade">0</span></p>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

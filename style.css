@@ -1,0 +1,127 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #8d8d8d;   /* change this to any color you like */
+    transition: background-color 0.3s ease;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #0d2158;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f1935, #8120d1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* CONTENT */
+.content-section {
+    padding: 120px 20px 60px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.activity {
+    background: #f9f5fc;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+}
+
+button {
+    padding: 8px 30px;
+    background: #83b5ee;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0b2a4d;
+}
+
+/* DARK MODE */
+.dark-mode {
+    background-color: #121212 !important;
+    color: rgb(0, 0, 0);
+}
+
+.dark-mode .activity {
+    background-color: #fffcfc;
+}
+
+.dark-mode .navbar {
+    background-color: #ffeded;
+}
+
+/* IMAGE FRAME */
+.image-frame {
+    width: 200px;
+    height: 130px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 3px solid #080c1a;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===== WEEK 3 GRADE CALCULATOR ===== */
+
+.grade-box {
+    background: #ffffff;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.grade-box input {
+    display: block;
+    margin: 5px 0;
+    padding: 8px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.grade-box button {
+    margin-top: 10px;
+}
+
+.grade-final {
+    margin-top: 20px;
+    text-align: center;
+}
